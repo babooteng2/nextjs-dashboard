@@ -41,3 +41,23 @@ pnpm dev
 - What loading skeletons are.
 - What Next.js Route Groups are, and when you might use them.
 - Where to place React Suspense boundaries in your application.
+
+## chapter10. Adding Search and Pagination
+
+- Learn how to use the Next.js APIs: useSearchParams, usePathname, and useRouter.
+- Implement search and pagination using URL search params.
+
+1. Capture the user's input.
+2. Update the URL with the search params.
+3. Keep the URL in sync with the input field.
+4. Update the table to reflect the search query.
+
+```terminal
+pnpm i use-debounce
+```
+
+How Debouncing Works:
+
+1. Trigger Event: When an event that should be debounced (like a keystroke in the search box) occurs, a timer starts.
+2. Wait: If a new event occurs before the timer expires, the timer is reset.
+3. Execution: If the timer reaches the end of its countdown, the debounced function is executed.
