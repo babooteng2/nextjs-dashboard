@@ -61,3 +61,34 @@ How Debouncing Works:
 1. Trigger Event: When an event that should be debounced (like a keystroke in the search box) occurs, a timer starts.
 2. Wait: If a new event occurs before the timer expires, the timer is reset.
 3. Execution: If the timer reaches the end of its countdown, the debounced function is executed.
+
+## chapter11. Mutating Data
+
+- What React Server Actions are and how to use them to mutate data.
+- How to work with forms and Server Components.
+- Best practices for working with the native FormData object, including type validation.
+- How to revalidate the client cache using the revalidatePath API.
+- How to create dynamic route segments with specific IDs.
+
+Creating an invoice
+
+- Here are the steps you'll take to create a new invoice:
+
+1. Create a form to capture the user's input.
+2. Create a Server Action and invoke it from the form.
+3. Inside your Server Action, extract the data from the formData object.
+4. Validate and prepare the data to be inserted into your database.
+5. Insert the data and handle any errors.
+6. Revalidate the cache and redirect the user back to invoices page.
+
+Updating an invoice
+
+- The updating invoice form is similar to the create an invoice form, except you'll need to pass the invoice id to update the record in your database. Let's see how you can get and pass the invoice id.
+
+These are the steps you'll take to update an invoice:
+
+1. Create a new dynamic route segment with the invoice id.
+2. Read the invoice id from the page params.
+3. Fetch the specific invoice from your database.
+4. Pre-populate the form with the invoice data.
+5. Update the invoice data in your database.
