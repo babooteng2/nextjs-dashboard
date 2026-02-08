@@ -92,3 +92,8 @@ These are the steps you'll take to update an invoice:
 3. Fetch the specific invoice from your database.
 4. Pre-populate the form with the invoice data.
 5. Update the invoice data in your database.
+
+## Chapter12. Handling Errors
+
+- How to use the special error.tsx file to catch errors in your route segments, and show a fallback UI to the user.
+- How to use the notFound function and not-found file to handle 404 errors (for resources that don’t exist).
