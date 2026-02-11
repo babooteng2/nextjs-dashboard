@@ -107,3 +107,22 @@ These are the steps you'll take to update an invoice:
 ```terminal
 pnpm add -D eslint eslint-config-next
 ```
+
+## Chapter14. Adding Authentication
+
+- What is authentication.
+- How to add authentication to your app using NextAuth.js.
+- How to use Proxy to redirect users and protect your routes.
+- How to use React's useActionState to handle pending states and form errors.
+
+```terminal
+pnpm i next-auth@beta
+
+# macOS
+openssl rand -base64 32
+# Windows can use https://generate-secret.vercel.app/32
+```
+
+```.env
+AUTH_SECRET=your-secret-key
+```
