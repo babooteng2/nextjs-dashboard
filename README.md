@@ -126,3 +126,10 @@ openssl rand -base64 32
 ```.env
 AUTH_SECRET=your-secret-key
 ```
+
+## Chapter.15 Adding Metadata
+
+- What metadata is.
+- Types of metadata.
+- How to add an Open Graph image using metadata.
+- How to add a favicon using metadata.
